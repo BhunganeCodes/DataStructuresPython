@@ -127,7 +127,7 @@ def process_tuple_of_tuples(data: Tuple[Tuple]) -> Dict:
     Q14: Implement a function to convert tuple of tuples to dictionary.
     Example: ((1, "a"), (2, "b"), (3, "c")) → {1: "a", 2: "b", 3: "c"}
     """
-    pass
+    return dict(data)
 
 def longest_consecutive_sequence(numbers: Set[int]) -> int:
     """
