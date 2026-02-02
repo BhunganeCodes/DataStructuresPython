@@ -116,7 +116,11 @@ def count_overlapping_patterns(text: str, pattern: str) -> int:
     Q13: Implement a function to count overlapping occurrences of a pattern in a string.
     Example: "aaaaa", "aa" → 4
     """
-    pass
+    count = 0
+    for i in range(len(text) - 1):
+        if pattern in text[i:]:
+            count += 1
+    return count
 
 def process_tuple_of_tuples(data: Tuple[Tuple]) -> Dict:
     """
