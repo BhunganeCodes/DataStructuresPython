@@ -134,4 +134,10 @@ def longest_consecutive_sequence(numbers: Set[int]) -> int:
     Q15: Implement a function to find length of longest consecutive sequence in a set.
     Example: {100, 4, 200, 1, 3, 2, 5} → 5 (sequence: 1,2,3,4,5)
     """
-    pass
+    sorted_nums = sorted(list(numbers))
+    seq = 1
+
+    for idx, nums in enumerate(sorted_nums):
+        if sorted_nums[idx + 1] - sorted_nums[idx] == 1: seq += 1
+        else: break
+    return seq 
