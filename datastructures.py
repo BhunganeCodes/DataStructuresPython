@@ -26,7 +26,7 @@ def remove_duplicates(numbers: List[int]) -> List[int]:
     Q3: Implement a function to remove duplicates from a list while maintaining order.
     Example: [1, 2, 2, 3, 4, 4, 5] → [1, 2, 3, 4, 5]
     """
-    pass
+    return list(set(numbers))
 
 def dict_keys_to_sorted_list(d: Dict) -> List[str]:
     """
