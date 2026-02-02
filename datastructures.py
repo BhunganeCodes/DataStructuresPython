@@ -33,7 +33,7 @@ def dict_keys_to_sorted_list(d: Dict) -> List[str]:
     Q4: Implement a function to convert dictionary keys to a sorted list.
     Example: {"z": 1, "a": 2, "b": 3} → ["a", "b", "z"]
     """
-    pass
+    return sorted(list(d))
 
 def tuple_sum(numbers: Tuple[int, ...]) -> int:
     """
