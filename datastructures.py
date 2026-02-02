@@ -5,7 +5,8 @@ def find_second_largest(numbers: List[int]) -> int:
     Q1: Implement a function to find the second largest number in a list.
     Example: [5, 2, 8, 1, 9, 3] → 8
     """
-    pass
+    numbers.sort()
+    return numbers[-2]
 
 def count_vowels(text: str) -> int:
     """
