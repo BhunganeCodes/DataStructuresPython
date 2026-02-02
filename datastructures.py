@@ -109,7 +109,7 @@ def custom_sort(words: List[str]) -> List[str]:
     Q12: Implement a function to sort list of strings by length and lexicographically.
     Example: ["banana", "apple", "cherry", "date"] → ["date", "apple", "banana", "cherry"]
     """
-    pass
+    return sorted(words, key=lambda x: (len(x), x))
 
 def count_overlapping_patterns(text: str, pattern: str) -> int:
     """
