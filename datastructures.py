@@ -87,7 +87,14 @@ def flatten_list(nested_list: List) -> List:
     Q10: Implement a function to flatten a nested list.
     Example: [1, [2, 3, [4, 5]], 6] → [1, 2, 3, 4, 5, 6]
     """
-    pass
+    res = []
+
+    for item in nested_list:
+        if isinstance(item, list):
+            res.extend(flatten_list(item))
+        else:
+            res.append(item)
+    return res
 
 def deep_get(d: Dict, path: str) -> any:
     """
