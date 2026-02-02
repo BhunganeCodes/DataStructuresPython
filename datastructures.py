@@ -80,7 +80,7 @@ def symmetric_diff(set1: Set[int], set2: Set[int]) -> Set[int]:
     Q9: Implement a function to find symmetric difference between two sets.
     Example: {1, 2, 3, 4}, {3, 4, 5, 6} → {1, 2, 5, 6}
     """
-    pass
+    return set1 ^ set2
 
 def flatten_list(nested_list: List) -> List:
     """
