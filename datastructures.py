@@ -101,7 +101,8 @@ def deep_get(d: Dict, path: str) -> any:
     Q11: Implement a function to get value from nested dictionary using path string.
     Example: {"user": {"address": {"city": "Boston"}}}, "user.address.city" → "Boston"
     """
-    pass
+    usr, addr, cty = path.split(".")
+    return d[usr][addr][cty]
 
 def custom_sort(words: List[str]) -> List[str]:
     """
