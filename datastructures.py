@@ -40,7 +40,7 @@ def tuple_sum(numbers: Tuple[int, ...]) -> int:
     Q5: Implement a function to calculate the sum of all numbers in a tuple.
     Example: (1, 2, 3, 4, 5) → 15
     """
-    pass
+    return sum(numbers)
 
 def rotate_list(numbers: List[int], k: int) -> List[int]:
     """
