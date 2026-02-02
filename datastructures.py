@@ -68,7 +68,12 @@ def merge_dicts(dict1: Dict[str, int], dict2: Dict[str, int]) -> Dict[str, int]:
     Q8: Implement a function to merge two dictionaries with sum of values for common keys.
     Example: {"a": 1, "b": 2}, {"b": 3, "c": 4} → {"a": 1, "b": 5, "c": 4}
     """
-    pass
+    for d in dict2:
+        if d in dict1:
+            dict1[d] += dict2[d]
+        else:
+            dict1[d] = dict2[d]
+    return dict1
 
 def symmetric_diff(set1: Set[int], set2: Set[int]) -> Set[int]:
     """
