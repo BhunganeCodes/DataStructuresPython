@@ -13,7 +13,13 @@ def count_vowels(text: str) -> int:
     Q2: Implement a function to count the number of vowels (a,e,i,o,u) in a string.
     Example: "Hello World" → 3
     """
-    pass
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
 
 def remove_duplicates(numbers: List[int]) -> List[int]:
     """
