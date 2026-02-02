@@ -47,7 +47,12 @@ def rotate_list(numbers: List[int], k: int) -> List[int]:
     Q6: Implement a function to rotate a list by k positions.
     Example: ([1, 2, 3, 4, 5], 2) → [4, 5, 1, 2, 3]
     """
-    pass
+    if k == 0:
+        return numbers
+    
+    for i in range(k):
+        numbers.insert(0, numbers.pop())
+    return numbers
 
 def is_palindrome(text: str) -> bool:
     """
