@@ -59,7 +59,9 @@ def is_palindrome(text: str) -> bool:
     Q7: Implement a function to check if a string is a palindrome (ignoring spaces and case).
     Example: "A man a plan a canal Panama" → True
     """
-    pass
+    text = text.lower().replace(" ", "")
+
+    return text == text[::-1]
 
 def merge_dicts(dict1: Dict[str, int], dict2: Dict[str, int]) -> Dict[str, int]:
     """
